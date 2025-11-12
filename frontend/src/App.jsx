@@ -6,6 +6,7 @@ import Signup from './components/auth/Signup'
 import Login from './components/auth/Login'
 import Marketplace from './components/pages/farmer/Marketplace'
 import ContactBuyer from './components/pages/farmer/ContactBuyer'
+import Weather from './components/farmer/Weather'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   <Route path='/signup' element={<Signup/>}/>
   <Route path='/market' element={<Marketplace/>}/>
   <Route path='/contact-buyer' element={<ContactBuyer/>}/>
+  <Route path="/weather" element={<Weather/>} />
 
  </Routes>
  </main>
