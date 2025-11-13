@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './components/shared/Navbar'
 import { BrowserRouter, Routes,Route } from 'react-router-dom'
-import Home from './components/Pages/Home'
 import Signup from './components/auth/Signup'
 import Login from './components/auth/Login'
 import Marketplace from './components/pages/farmer/Marketplace'
@@ -9,6 +8,7 @@ import Mandi from './components/pages/farmer/Mandi'
 import ContactBuyer from './components/pages/farmer/ContactBuyer'
 import BuyerDashboard from './components/pages/Buyer/BuyerDashboard'
 import Weather from './components/farmer/Weather'
+import Home from './components/pages/Home'
 
 
 function App() {
