@@ -1,6 +1,6 @@
 import React from "react";
 import { MapPin, Store, IndianRupee, Package, PinIcon } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const marketplaceData = [
   {
@@ -84,9 +84,12 @@ export default function Marketplace() {
             </div>
 
             {/* Button */}
-            <button onClick={() => navigate("/contact-buyer")}className="mt-5 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
-              Contact Buyer
+         <Link to={`/market/${item.mandi}`}>
+         <button 
+            className="mt-5 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+              View Buyer's
             </button>
+              </Link> 
           </div>
         ))}
       </div>

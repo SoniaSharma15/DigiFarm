@@ -1,7 +1,10 @@
 import { Cloud, Sprout, ThumbsUp, TrendingUp } from 'lucide-react'
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 function Boxes() {
+const navigate = useNavigate();
+
   return (
     <>
  <main className=" flex flex-col items-center mt-16 space-y-10 my-5">
@@ -12,12 +15,14 @@ function Boxes() {
             <p className="font-semibold">Crops in demand</p>
           </div>
 
-          <div className="bg-sky-400 text-white w-40 md:w-50 h-28 rounded-xl flex flex-col items-center justify-center shadow-md hover:cursor-pointer">
+          <div className="bg-sky-400 text-white w-40 md:w-50 h-28 rounded-xl flex flex-col items-center justify-center shadow-md hover:cursor-pointer"
+          onClick={()=>(navigate("/Weather"))}>
             <Cloud size={50} className="mb-2" />
             <p className="font-semibold">Weather report</p>
           </div>
 
-          <div className="bg-red-400 text-white w-40 md:w-50 h-28 rounded-xl flex flex-col items-center justify-center shadow-md hover:cursor-pointer">
+          <div className="bg-red-400 text-white w-40 md:w-50 h-28 rounded-xl flex flex-col items-center justify-center shadow-md hover:cursor-pointer"
+          >
             <TrendingUp size={50} className="mb-2" />
             <p className="font-semibold">Market trends</p>
           </div>

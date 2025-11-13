@@ -141,9 +141,9 @@ function Signup() {
                 <Input
                   type="radio"
                   name="role"
-                  value="Buyer"
+                  value="buyer"
                   className="cursor-pointer"
-                  checked={input.role === "Buyer"}
+                  checked={input.role === "buyer"}
                   onChange={changeEventHandler}
                 ></Input>
                 <Label htmlFor="r2">Buyer</Label>
