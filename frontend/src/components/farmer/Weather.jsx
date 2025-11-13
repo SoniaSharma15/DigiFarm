@@ -177,7 +177,7 @@ const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-    const [currentLocation, setCurrentLocation] = useState('New York');
+    const [currentLocation, setCurrentLocation] = useState('Lucknow');
 
     const T = translations[language];
 

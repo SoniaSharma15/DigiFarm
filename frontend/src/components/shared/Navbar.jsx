@@ -51,9 +51,9 @@ const logoutHandler = async () => {
             {user && user.role === "buyer" ? (
               <>
                 <li className="cursor-pointer">
-                  <Link to={"/buyer/add-requirements"}>Requirement</Link>
+                  <Link to={"/buyer-dashboard"}>Dashboard</Link>
                 </li>
-                <li className="cursor-pointer">
+              <li className="cursor-pointer">
                   <Link to={"/admin/jobs"}>View Crops</Link>
                 </li>
             
