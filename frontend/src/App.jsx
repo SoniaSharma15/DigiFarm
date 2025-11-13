@@ -6,6 +6,7 @@ import Signup from './components/auth/Signup'
 import Login from './components/auth/Login'
 import Marketplace from './components/pages/farmer/Marketplace'
 import ContactBuyer from './components/pages/farmer/ContactBuyer'
+import FarmerDashboard from './components/dashboards/FarmerDashbooard'
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
   <Route path='/signup' element={<Signup/>}/>
   <Route path='/market' element={<Marketplace/>}/>
   <Route path='/contact-buyer' element={<ContactBuyer/>}/>
+  /* farmer dashboard routing */
+  <Route path='/Farmer-dashboard' element={<FarmerDashboard />}/>
 
  </Routes>
  </main>
