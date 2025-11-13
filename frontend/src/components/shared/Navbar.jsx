@@ -48,6 +48,9 @@ const logoutHandler = async () => {
         </div>
         <div className="flex items-center gap-5">
           <ul className="flex font-medium item center gap-5 ">
+             <li className="cursor-pointer">
+                  <Link to={"/weather"}>Weather</Link>
+                </li>
             {user && user.role === "buyer" ? (
               <>
                 <li className="cursor-pointer">

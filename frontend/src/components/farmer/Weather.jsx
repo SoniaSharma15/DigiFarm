@@ -173,7 +173,7 @@ const translations = {
 // --- Main App Component ---
 const Weather = () => {
     const [language, setLanguage] = useState('en');
-    const [locationQuery, setLocationQuery] = useState('New York'); // Default initial city
+    const [locationQuery, setLocationQuery] = useState('Lucknow'); // Default initial city
     const [weatherData, setWeatherData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
