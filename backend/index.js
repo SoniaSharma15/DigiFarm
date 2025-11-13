@@ -3,6 +3,8 @@ import cookieParser from "cookie-parser";
 import dotenv from "dotenv"
 import connectDB from "./utils/db.js";
 import userRoute from "./routes/user.route.js";
+
+import cropRoutes from "./routes/crop.route.js";
 // import companyRoute from "./routes/company.route.js"
 // import JobRoute from "./routes/job.route.js"
 // import ApplicationRoute from "./routes/application.route.js"
@@ -10,11 +12,15 @@ import connectCloudinary from "./utils/cloudinary.js";
 // import notificationRoutes from './routes/notificationRoutes.js';
 import cors from 'cors';
 dotenv.config({});
+
 const app=express();
 connectCloudinary()
+
+
+
 //middleware
 
-app.use(express.json())
+app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
@@ -46,6 +52,9 @@ const PORT=process.env.PORT;
 
 //api's
 app.use("/api/v1/user",userRoute)
+
+// Mounting farmere's dashboard table routes by sushant
+app.use('/api/v1', cropRoutes);
 // app.use("/api/v1/company",companyRoute) 
 // app.use("/api/v1/job",JobRoute) ;
 // app.use("/api/v1/applications",ApplicationRoute) ;
