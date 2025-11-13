@@ -5,7 +5,9 @@ import Home from './components/Pages/Home'
 import Signup from './components/auth/Signup'
 import Login from './components/auth/Login'
 import Marketplace from './components/pages/farmer/Marketplace'
+import Mandi from './components/pages/farmer/Mandi'
 import ContactBuyer from './components/pages/farmer/ContactBuyer'
+import BuyerDashboard from './components/pages/Buyer/BuyerDashboard'
 import Weather from './components/farmer/Weather'
 
 
@@ -20,8 +22,10 @@ function App() {
   <Route path='/' element={<Home/>}/>
   <Route path='/login' element={<Login/>}/>
   <Route path='/signup' element={<Signup/>}/>
+  <Route path='/dashboard' element={<BuyerDashboard/>}/>
   <Route path='/market' element={<Marketplace/>}/>
-  <Route path='/contact-buyer' element={<ContactBuyer/>}/>
+  <Route path='/market/:mandi' element={<Mandi/>}/>
+  <Route path='/market/:mandi/contact-buyer' element={<ContactBuyer/>}/>
   <Route path="/weather" element={<Weather/>} />
 
  </Routes>
